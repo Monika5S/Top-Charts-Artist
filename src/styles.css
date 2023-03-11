@@ -1,0 +1,150 @@
+body {
+  font-family: sans-serif;
+  background: rgb(34, 33, 39);
+  color: ghostwhite;
+  margin: 0;
+
+  font-family: serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-top: 12px;
+  line-height: 1.5;
+  color: palevioletred;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 20px 60px;
+  line-height: 2;
+  background: rgb(23, 23, 23);
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+.container {
+  max-width: max-content !important;
+  padding: 20px 60px;
+}
+
+.active {
+  color: #00a6ed;
+}
+
+.top-charts {
+  padding-top: 100px;
+  padding-right: 100px;
+}
+
+.song-name,
+.top-album {
+  display: flex;
+}
+
+.song-name {
+  margin-top: 25px;
+  align-items: center;
+}
+
+.song-name button {
+  background: transparent;
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 10px 12px;
+  border: 3px solid #00a6ed;
+}
+
+.song-name p {
+  padding-left: 25px;
+  color: #00a6ed;
+}
+
+.artist-image {
+  align-items: center;
+  position: relative;
+}
+.artist-image img {
+  width: 100%;
+}
+.artist-image p {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-size: 52px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 50px;
+  color: rgba(248, 248, 255, 0.8);
+  background: rgba(105, 87, 122, 0.5);
+}
+
+.top-album {
+  margin: 40px 0;
+}
+
+.top-album h3 {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.top-album img {
+  width: 65px;
+  height: 65px;
+  margin-right: 10px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid rgb(23, 23, 23);
+  box-shadow: 0 0 3px gainsboro;
+}
+
+audio {
+  width: 100%;
+}
+
+@media (max-width: 968px) {
+  nav {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .top-charts {
+    padding: 20px 10px;
+    text-align: center;
+  }
+  .song-name,
+  .top-album {
+    justify-content: center;
+  }
+  .artist-image {
+    margin-top: 30px;
+  }
+}

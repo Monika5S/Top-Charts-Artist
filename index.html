@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Parcel Sandbox</title>
+    <title>Top Chart Artists</title>
     <meta charset="UTF-8" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -36,61 +36,59 @@
           <input type="text" placeholder="search favorite artist" />
           <input type="submit" value="🔍" />
         </form>
-
-        <!-- <img
-          src="https://stylecaster.com/wp-content/uploads/2019/12/black-pink.jpg"
-          alt="artist image"
-          class="artist-profile"
-        /> -->
       </div>
     </nav>
 
     <div class="container">
       <div class="row mt-5">
         <div class="col-md-4 top-charts">
-          <h1>#1 k-pop chart</h1>
-          <h2>Black pink in your area</h2>
+          <h1 id="headline"></h1>
+          <h2 id="tagline"></h2>
 
-          <div class="song-name">
+          <a href="#audio" class="song-name pt-3 text-decoration-none">
             <button>▶️</button>
-            <p>Kill this love</p>
-          </div>
+            <p id="hitsong"></p>
+          </a>
         </div>
 
         <div class="col-md-8 p-0">
           <div class="artist-image">
-            <p>black pink</p>
+            <p id="img-cover-tag"></p>
             <img
-              src="https://pbs.twimg.com/media/FeNDTKbVsAA-Pqd.jpg"
               alt="artist image"
               class="img-fluid p-2 border border-2"
+              id="img-cover"
             />
           </div>
 
           <div class="top-album d-flex align-items-center">
             <h3>Top🔹 album🔸</h3>
 
-            <img
-              src="https://stylecaster.com/wp-content/uploads/2019/12/black-pink.jpg"
-              alt="artist image"
-            />
-            <img
-              src="https://people.com/thmb/JeX3Zm0C8LpUeM12Oa3LzQS6snI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(764x229:766x231)/Blackpink-2023-members-01-9d67ffe25a474456b4be77adedb057b0.jpg"
-              alt="artist image"
-            />
-            <img
-              src="https://kenh14cdn.com/203336854389633024/2023/1/23/photo-12-1674495536124524013040.jpeg"
-              alt="artist image"
-            />
+            <a href="#" id="album-1-link" target="_blank">
+              <img alt="artist image" id="album-1" />
+            </a>
+
+            <a href="#" id="album-2-link" target="_blank">
+              <img alt="artist image" id="album-2" />
+            </a>
+
+            <a href="#" id="album-3-link" target="_blank">
+              <img alt="artist image" id="album-3" />
+            </a>
           </div>
         </div>
       </div>
 
-      <div class="music-player mt-4">
-        <audio src="./src/media/kill-this-love.mp3" controls></audio>
+      <div class="music-player mt-4 text-center" id="audio">
+        <audio controls id="hitsong-audio"></audio>
+      </div>
+
+      <div class="pt-5 navigate-button d-flex justify-content-between">
+        <button id="previous" class="py-2 px-5 m-3 change">⬅️ Back</button>
+        <button id="next" class="py-2 px-5 m-3 change">Next ➡️</button>
       </div>
     </div>
 
-    <script src="src/index.js"></script>
+    <script src="./src/index.js"></script>
   </body>
 </html>

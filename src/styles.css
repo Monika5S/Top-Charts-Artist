@@ -90,9 +90,11 @@ nav ul li {
   align-items: center;
   position: relative;
 }
+
 .artist-image img {
   width: 100%;
 }
+
 .artist-image p {
   position: absolute;
   width: 100%;
@@ -128,6 +130,18 @@ nav ul li {
 
 audio {
   width: 100%;
+  margin-top: 20px;
+}
+
+.change {
+  border: 2px solid gainsboro;
+  background: transparent;
+  color: whitesmoke;
+}
+
+.change:hover {
+  border-color: #00a6ed;
+  color: #00a6ed;
 }
 
 @media (max-width: 968px) {
@@ -140,10 +154,12 @@ audio {
     padding: 20px 10px;
     text-align: center;
   }
+
   .song-name,
   .top-album {
     justify-content: center;
   }
+
   .artist-image {
     margin-top: 30px;
   }

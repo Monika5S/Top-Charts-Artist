@@ -19,6 +19,7 @@
           src="https://logos-world.net/wp-content/uploads/2020/12/Blackpink-Logo.png"
           alt="artist brand logo"
           width="100px"
+          id="logo"
         />
       </div>
 
@@ -45,7 +46,12 @@
           <h1 id="headline"></h1>
           <h2 id="tagline"></h2>
 
-          <a href="#audio" class="song-name pt-3 text-decoration-none">
+          <a
+            href="#audio"
+            id="hitsong-audio"
+            target="_blank"
+            class="song-name pt-3 text-decoration-none"
+          >
             <button>▶️</button>
             <p id="hitsong"></p>
           </a>
@@ -79,11 +85,11 @@
         </div>
       </div>
 
-      <div class="music-player mt-4 text-center" id="audio">
+      <!-- <div class="music-player mt-4 text-center" id="audio">
         <audio controls id="hitsong-audio"></audio>
-      </div>
+      </div> -->
 
-      <div class="pt-5 navigate-button d-flex justify-content-between">
+      <div class="pt-4 navigate-button d-flex justify-content-between">
         <button id="previous" class="py-2 px-5 m-3 change">⬅️ Back</button>
         <button id="next" class="py-2 px-5 m-3 change">Next ➡️</button>
       </div>

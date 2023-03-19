@@ -49,6 +49,11 @@ nav ul li {
   margin: 0 20px;
 }
 
+nav img {
+  max-height: 100px;
+  object-fit: contain;
+}
+
 .container {
   max-width: max-content !important;
   padding: 20px 60px;
